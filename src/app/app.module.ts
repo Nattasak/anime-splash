@@ -5,11 +5,13 @@ import { RouterModule } from '@angular/router';
 
 
 import { AppComponent } from './app.component';
+import { AnimeComponent } from './anime/anime.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    AnimeComponent
   ],
   imports: [
     BrowserModule,

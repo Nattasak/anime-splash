@@ -7,13 +7,17 @@ import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { AnimeComponent } from './anime/anime.component';
 import { AnimeDetailComponent } from './anime/animeDetail.component';
+import { GalleryComponent } from './gallery.component';
+import { AboutComponent } from './about.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     AnimeComponent,
-    AnimeDetailComponent
+    AnimeDetailComponent,
+    GalleryComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,

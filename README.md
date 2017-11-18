@@ -1,3 +1,3 @@
 # Anime Splash
 
-- https://github.com/Nattasak/anime-splash
+- https://nattasak.github.io/anime-splash/

@@ -6,12 +6,14 @@ import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { AnimeComponent } from './anime/anime.component';
+import { AnimeDetailComponent } from './anime/animeDetail.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    AnimeComponent
+    AnimeComponent,
+    AnimeDetailComponent
   ],
   imports: [
     BrowserModule,

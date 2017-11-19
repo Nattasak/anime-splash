@@ -1,1 +1,15 @@
-/* You can add global styles to this file, and also import other style files */
+.title {
+  margin-bottom: 40px;
+}
+
+.row {
+  margin-bottom: 30px;
+}
+
+.card-body a {
+  color: #000;
+}
+
+.card-title {
+  font-size: 1.3rem;
+}

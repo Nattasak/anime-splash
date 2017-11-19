@@ -1,3 +1,5 @@
 # Anime Splash
 
-- https://nattasak.github.io/anime-splash/
+Responsive Anime Fan site : D
+
+https://nattasak.github.io/anime-splash/

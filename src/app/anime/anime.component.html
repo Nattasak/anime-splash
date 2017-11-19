@@ -1,3 +1,22 @@
-<p>
-  anime works!
-</p>
+<!-- CONTENT -->
+
+<h3 class="title">Studio Ghibli Film</h3>
+
+<div class="row">
+  <ng-container *ngFor="let data of results">
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+      <div class="card">
+        <a [routerLink]="['/anime', data.id]">
+          <img class="card-img-top" src="https://loremflickr.com/320/240/{{data.title}}" alt="{{data.title}}">
+        </a>
+        <div class="card-body">
+          <a [routerLink]="['/anime', data.id]">
+            <h4 class="card-title">{{data.title}}</h4>
+          </a>
+          <p class="card-text">{{data.description}}</p>
+        </div>
+      </div>
+    </div>
+  </ng-container>
+</div>
+<!-- row -->

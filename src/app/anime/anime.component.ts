@@ -1,4 +1,3 @@
-// Angular Module
 import { Component, OnInit } from '@angular/core';
 import { HttpClient, HttpErrorResponse  } from '@angular/common/http';
 
@@ -17,17 +16,15 @@ export class AnimeComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.http.get('https://ghibliapi.herokuapp.com/films').subscribe(
-      data => {
-        this.results = data;
-      },
-      (err: HttpErrorResponse) => {
-        if (err.error instanceof Error) {
-          console.log("Client-side error occured.");
-        } else {
-          console.log("Server-side error occured.");
-        }
+    this.http.get('https://ghibliapi.herokuapp.com/films').subscribe(data => {
+      this.results = data;
+    },
+    (err: HttpErrorResponse) => {
+      if (err.error instanceof Error) {
+        console.log("Client-side error occured.");
+      } else {
+        console.log("Server-side error occured.");
       }
-    );
+    });
   }
 }

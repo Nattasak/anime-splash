@@ -1,13 +1,3 @@
 .card {
   margin-bottom: 30px;
 }
-
-.placeholder-container {
-  position: relative;
-}
-
-.card-img-top.image {
-  position: absolute;
-  top: 0;
-  left: 0;
-}

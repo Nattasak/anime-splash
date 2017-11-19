@@ -1,4 +1,10 @@
+.card-img-top {
+  max-width: 300px;
+  margin-bottom: 30px;
+}
+
 .desc {
+  max-width: 500px;
   margin-bottom: 40px;
 }
 

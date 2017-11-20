@@ -2,14 +2,12 @@ import { Component, OnInit } from '@angular/core';
 import { HttpClient, HttpErrorResponse  } from '@angular/common/http';
 import { ActivatedRoute } from '@angular/router';
 
-
 @Component({
   selector: 'app-anime-detail',
   templateUrl: './animeDetail.component.html',
   styleUrls: ['./animeDetail.component.css']
 })
 
-// Class
 export class AnimeDetailComponent implements OnInit {
   results: any;
   paramsSub: any;

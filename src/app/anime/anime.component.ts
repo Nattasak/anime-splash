@@ -1,14 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient, HttpErrorResponse  } from '@angular/common/http';
 
-
 @Component({
   selector: 'app-anime',
   templateUrl: './anime.component.html',
   styleUrls: ['./anime.component.css']
 })
 
-// Class
 export class AnimeComponent implements OnInit {
   results: any;
 

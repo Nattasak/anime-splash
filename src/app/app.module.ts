@@ -4,13 +4,11 @@ import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
 import { routes } from './app.routes';
 
-
 import { AppComponent } from './app.component';
 import { AnimeComponent } from './anime/anime.component';
 import { AnimeDetailComponent } from './anime/animeDetail.component';
 import { GalleryComponent } from './gallery.component';
 import { AboutComponent } from './about.component';
-
 
 @NgModule({
   declarations: [

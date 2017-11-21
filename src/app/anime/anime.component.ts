@@ -10,18 +10,18 @@ import { HttpClient, HttpErrorResponse  } from '@angular/common/http';
 export class AnimeComponent implements OnInit {
   results: any;
 
-  constructor(private http: HttpClient) {
-  }
+  constructor(private http: HttpClient) {}
 
   ngOnInit(): void {
     this.http.get('https://ghibliapi.herokuapp.com/films').subscribe(data => {
       this.results = data;
+      console.log(data);
     },
     (err: HttpErrorResponse) => {
       if (err.error instanceof Error) {
-        console.log("Client-side error occured.");
+        console.log('Client-side error occured.');
       } else {
-        console.log("Server-side error occured.");
+        console.log('Server-side error occured.');
       }
     });
   }

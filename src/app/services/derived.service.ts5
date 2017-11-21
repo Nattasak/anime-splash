@@ -1,0 +1,15 @@
+@Injectable()
+class UserService extends RestService {
+
+  private relativeUrl: string = '/users/';
+
+  public getAllUsers(): Observable<User[]> {
+    return this.get(this.relativeUrl);
+  }
+
+  public getUserById(id: number): Observable<User> {
+    return this.get(`${this.relativeUrl}${id.toString()}`);
+  }
+
+}
+
